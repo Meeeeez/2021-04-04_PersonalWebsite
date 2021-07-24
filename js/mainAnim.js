@@ -26,7 +26,7 @@ function init() {
     wfobject = new THREE.Mesh(geometry, material);
     scene.add(wfobject);
 
-    camera.position.z = 4;
+    camera.position.z = 3;
     camera.rotation.y = -.18;
 
     hemisphereCol.push([new THREE.Color("rgb(24,111,78)"), new THREE.Color("rgb(255,232,0)")]);
@@ -64,8 +64,12 @@ function render() {
         isGoingDown = true;
     }
 
-    if (camera.position.z <= 6) {
-        camera.position.z += .015;
+    if (window.screen.width > 1024) {
+        if (camera.position.z <= 6) {
+            camera.position.z += .015;
+        }
+    } else {
+        camera.position.x = -1.2
     }
 
     renderer.render(scene, camera);

@@ -29,11 +29,25 @@ a {
     color: #1A1A1A;
 }
 
-canvas {
-    transform-origin: bottom right;
-    transform: skewX(15deg);
-    -ms-transform: skewX(15deg);
-    -webkit-transform: skewX(15deg);
+@media screen and (max-width: 1024px) {
+    canvas {
+        transform-origin: bottom right;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    canvas {
+        transform-origin: bottom right;
+        transform: skewX(15deg);
+        -ms-transform: skewX(15deg);
+        -webkit-transform: skewX(15deg);
+    }
+
+    canvas::after {
+        transform: skewX(-15deg);
+        -ms-transform: skewX(-15deg);
+        -webkit-transform: skewX(-15deg);
+    }
 }
 
 button {
@@ -45,12 +59,6 @@ button {
     /*input has OS specific font-family*/
     text-decoration: underline;
     cursor: pointer;
-}
-
-canvas::after {
-    transform: skewX(-15deg);
-    -ms-transform: skewX(-15deg);
-    -webkit-transform: skewX(-15deg);
 }
 
 body::-webkit-scrollbar {
