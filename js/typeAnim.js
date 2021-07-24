@@ -6,7 +6,7 @@ blinkCursor();
 
 function typeString() {
     var i = 0;
-    var strings = ["Javascript", "Python", "Java", "Kotlin", "CSS", "C", "PHP", "SQL", "ThreeJS", "Routers", "Firewalls", "VPNs", "DNS", "Cisco", "MikroTik",  "Switches", "Windows Server 2016", "NAT", "SNMP", "VMWare", "Proxys", "DMZs", "AWS", "Android Studio", "MS Project"]
+    var strings = ["Javascript", "Python", "Java", "Kotlin", "CSS", "C", "PHP", "SQL", "ThreeJS", "Routers", "Firewalls", "VPNs", "DNS", "Cisco", "MikroTik", "Switches", "Windows Server 2016", "NAT", "SNMP", "VMWare", "Proxys", "DMZs", "AWS", "Android Studio", "MS Project"]
     var intervalID = window.setInterval(() => {
         if (stringCounter < strings.length) {
             if (i < strings[stringCounter].length) {

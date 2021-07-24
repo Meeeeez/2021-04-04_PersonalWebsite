@@ -1,10 +1,17 @@
+@font-face {
+    font-family: 'Modern Sans';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Modern Sans'), url('font/MODERNE SANS.woff') format('woff');
+}
+
 html {
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
 
     overflow-y: hidden;
 
-    font-family: 'Modern Sans', 'Dubai', serif;
+    font-family: 'Modern Sans', serif;
 
     -webkit-user-select: none; /* Safari */
     -moz-user-select: none; /* Firefox */
