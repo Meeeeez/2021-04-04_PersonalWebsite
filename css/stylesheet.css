@@ -190,12 +190,12 @@ ul:hover li {
 }
 
 #typed-element {
-    margin-right: -10px;
+    margin-right: clamp(-20px, -.7vw, 20px);
     color: #1d8d5f;
 }
 
 #typed-cursor {
-    font-size: 1.5vw;
+    font-size: clamp(11px, 1.5vw, 45px);
 }
 
 #typed-static {

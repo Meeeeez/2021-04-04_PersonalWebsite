@@ -14,7 +14,7 @@ function typeString() {
                 i++;
             } else {
                 clearInterval(intervalID);
-                window.setTimeout(deleteString, 1000)
+                window.setTimeout(deleteString, 1200)
                 stringCounter++;
             }
         } else {
