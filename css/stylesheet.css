@@ -82,7 +82,7 @@ canvas {
 }
 
 #logo {
-    height: clamp(50px, 7.5vw, 300px);
+    height: clamp(50px, 8vw, 300px);
 }
 
 #name {
